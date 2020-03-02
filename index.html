@@ -48,6 +48,8 @@
 	  <p>	
 	  <b>Plan pour le mois de Février : </b>Terminer de traduire le fichier <code>dblreduns.f</code>
 	  et être bien avancé dans les tests pour m'assurer du bon fonctionnement du code.
+	<b>Plan pour le mois de Mars : </b>Terminer de traduire le code et m'assurer que les scripts Julia,
+fonctionne minimalement.
 		
 		</div>
 <hr/>
@@ -82,6 +84,16 @@
 	  je suis plus familié avec les noms des paramètres des fonctions et leur rôles. Je n'ai toujours pas commencé
 	  à écrire des tests, mais je compte commencer sous peu, voulant tout d'abord avoir fait un bon bout de chemin
 	  dans la traduction du code.
+	  
+	  </p>
+		<h3>Semaines du 17 février au 1 mars février</h3>
+    
+  <p> Je n'ai pas encore fini le travail sur le fichier <code>dblreduns.f</code>, il reste quelques centaines
+lignes de code plus les tests. J'ai eu quelques petits problèmes, le plus grand étant :
+j'avais oublié que les paramètres scalaires en Julia ne sont pas passés par référence contrairement à FORTRAN,
+donc les fonctions qui en FORTRAN modifiaient les paramètres scalaires ne les modifiaient plus en Julia. J'ai réglé
+le problème en faisant un type "wrapper" pour les Float et les Int. Aussi, il y une ou deux grosses sous-routines qui
+avaient beaucoup de goto en spaghetti, ce qui rend difficile la compréhension de l'exécution du code.
 	  
 	  </p>
 	</div>
