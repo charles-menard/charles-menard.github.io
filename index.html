@@ -50,6 +50,8 @@
 	  et être bien avancé dans les tests pour m'assurer du bon fonctionnement du code.
 	<b>Plan pour le mois de Mars : </b>Terminer de traduire le code et m'assurer que les scripts Julia,
 fonctionne minimalement.
+		  <b>Plan pour le mois d'avril : </b>Terminer de traduire le code et le faire fonctionner sur
+un problème de moindre carré.
 		
 		</div>
 <hr/>
@@ -103,6 +105,18 @@ parties du code pour intégrer les changements que j'ai mentionné au semaine pr
 que toutes les variables de type "int" ou "float64" qui était modifiées par une sous-routine était bien de type
 "wrapper", ce qui demandait de modifier certaines anciennes fonctions et les appels à ces fonctions. 
 
+	</p>
+	<h3>Semaines du 16 mars au 30 mars</h3>
+	<p>
+	J'ai réglé certains problèmes dans le fichier <code>dblreduns.f</code>. Par exemple, je me suis rendu compte
+qu'en Julia, bien que les tableaux soient passés par référence, les sous-tableaux sont passés par copie. J'ai donc
+dû consulter la documentation de Julia pour voir que je devais utiliser l'interface "view" pour obtenir le résultat 
+désiré.
+	</p>
+	<p>
+	De plus, j'ai commencé à travailler sur le fichier <code>dblmod2nls.f</code>. Celui-ci contient la majorité
+du code restant à traduire. Mon travail s'est accéléré car je suis davantage familier avec le nom des paramètres
+et les idiomes Fortran.
 	</p>
 	</div>
 <hr/>
