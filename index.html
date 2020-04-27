@@ -118,6 +118,22 @@ désiré.
 du code restant à traduire. Mon travail s'est accéléré car je suis davantage familier avec le nom des paramètres
 et les idiomes Fortran.
 	</p>
+	<h3>31 mars au 27 avril</h3>
+	<p>
+	Le code de <code>dblmod2nls.f</code> ainsi que de <code>dblwrkset.f</code> est traduit depuis une semaine ou deux.
+		Le fichier <code>dblenls.f</code> consiste en une version plus facile a appeler de la routine principale 
+		de moindre carrée (la routine est dans <code>dblmod2nls.f</code> et s'appelle <code>nlsnip</code>).
+		J'ai créé une routine similaire pour pouvoir appeler facilement la routine de moindre carrée,
+		avec des paramètres par défaut.
+		
+	</p>
+	<p> Avant de pouvoir faire "rouler" le code sans message d'erreur, j'ai du corriger de nombreuses erreurs que 
+		j'avais introduit dans le code, en majorité des erreurs dans les appels de fonctions, en raison du
+		grand nombre de paramètres. J'ai également eu des problèmes mettant en cause l'ancienne pratique d'utiliser
+		un seul gros tableau pour tous les calculs intermédiaires, pour économiser de la mémoire. Pour un tableau
+		X, une routine peut s'attendre à ce que X soit un tableau de 10 élements, et une autre un tableau de 20 élements.
+		En date du 27 avril, le code "tourne mais donne des résultats erronnés.
+		</p>	
 	</div>
 <hr/>
 		<div id="coordonnees">
